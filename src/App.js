@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import List from "./List";
 
 class App extends Component {
   constructor(props)
@@ -32,6 +33,7 @@ class App extends Component {
           <input value={this.state.term} onChange={this.onChange} />
           <button>Submit</button>
         </form>
+        <List items={this.state.items} />
       </div>
     );
   }
