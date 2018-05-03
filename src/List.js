@@ -1,11 +1,12 @@
 import React from "react";
 import Todo from "./Todo";
+import TodoItem from "./TodoItem";
 
 const List = props => {
     return (
     <ul>
         {
-            props.items.map((item, index) => <Todo item={item} />)
+            props.items.map((item, index) => <TodoItem item={item} />)
         }
     </ul>);
 };

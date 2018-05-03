@@ -45,6 +45,10 @@ ul li:hover {
 	background: #ddd;
 }
 
+ul li.done {
+	text-decoration: line-through;
+}
+
 .close {
 	position: absolute;
 	right: 0;
