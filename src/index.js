@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import TodoForm from './TodoForm';
 
 ReactDOM.render(
-    <App />,
+    <TodoForm />,
     document.getElementById('root'));
