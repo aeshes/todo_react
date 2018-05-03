@@ -19,12 +19,12 @@ class TodoItem extends React.Component
         );
     }
 
-    handleComplete()
+    handleComplete = () =>
     {
-        this.setState({ done: true });
+        this.setState({ done: !this.state.done });
     }
 
-    handleRemove()
+    handleRemove = () =>
     {
         alert("remove");
     }
