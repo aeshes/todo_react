@@ -26,3 +26,33 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+ul li{
+	cursor: pointer;
+	padding: 12px 8px 12px 40px;
+	background: #eee;
+	font-size: 18px;
+	position: relative;
+}
+
+ul li:hover {
+	background: #ddd;
+}
+
+.close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+	background-color: #f44336;
+	color: white;
+}
