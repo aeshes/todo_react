@@ -25,14 +25,18 @@ class TodoForm extends Component {
   render() {
     let todos = this.state.items.map((item) => ({ text: item, done: false}));
     return (
-      <div>
-        <form className="App" onSubmit={this.onSubmit}>
-          <input value={this.state.term} onChange={this.onChange} />
-          <button>Submit</button>
-        </form>
-        <ul>
-            <TodoList items={todos} />
-        </ul>
+      <div className="todo-app">
+
+        <label class="todo-label" for="new_todo">
+          What do you want to do today?
+        </label>
+
+        <input type="text" id="new_todo" class="todo-input" />
+
+        <div className="todo-list">
+          <TodoList items={todos} />
+        </div>
+
       </div>
     );
   }
