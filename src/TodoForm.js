@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import TodoList from "./TodoList";
 
@@ -11,18 +10,16 @@ class TodoForm extends Component {
       term: "", // to store what we passing as a value to our input
       items: [] // store every value which we passing to our todo list
     };
+    this.onChange = this.onChange.bind(this);
+    this.onSubmit = this.onSubmit.bind(this);
   }
 
-  onChange = (event) => {
-    this.setState({ term: event.target.value });
+  onChange(event) {
+    
   }
 
-  onSubmit = (event) => {
-    event.preventDefault();
-    this.setState({
-      term: "",
-      items: [...this.state.items, this.state.term]
-    });
+  onSubmit(event) {
+    
   }
 
   render() {
